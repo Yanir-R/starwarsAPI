@@ -1,7 +1,6 @@
 import React from 'react';
 import Film from 'swapi-typescript/dist/models/Film';
 import { Card, Col } from 'react-bootstrap';
-import LimitCharacters from 'limit-characters';
 import limitCharacters from 'limit-characters';
 
 
