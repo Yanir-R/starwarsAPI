@@ -1,1 +1,1 @@
-export const FILMS_URL = 'https://swapi.dev/api/films/'
+export const FILMS_URL = 'https://swapi.dev/api/films'

@@ -1,30 +1,21 @@
 import React from 'react';
 import './App.css';
-import Films from './Films/Films';
-import { Switch, Route, Router } from "react-router-dom";
+import { Films } from './Films/Films';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Film from './Film/Film';
 
 
-
-
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
-    <Switch>
+    <Router>
+      <Switch>
         <Route path="/film/:filmId">
           <Film />
         </Route>
-      <Route path="/">
+        <Route path="/" >
           <Films />
         </Route>
-    </Switch>
+      </Switch>
+    </Router>
   )
 }
-
-
-
-
-
-
-
-
-export default App;

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import App from './Films/Films';
 import reportWebVitals from './reportWebVitals';
+import { App } from './App';
 
 const queryClient = new QueryClient()
 
 ReactDOM.render(
-  
+
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <App />
