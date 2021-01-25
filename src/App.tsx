@@ -6,6 +6,9 @@ import { Film } from './Film/Film';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const App: React.FC = () => {
+
+
+
   return (
     <Router>
       <Switch>
