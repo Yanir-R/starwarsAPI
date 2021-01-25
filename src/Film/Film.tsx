@@ -1,13 +1,13 @@
 
 import React from 'react';
-import {  useQuery, useQueryClient } from 'react-query';
+import {  useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import { api } from '../api';
 
 
 
 const Film: React.FC = () => {
-  const queryClient = useQueryClient()
+ 
 
   const { filmId } = useParams<Record<string, string | undefined>>()
   const { isLoading, error, data } = useQuery('films', api.film(filmId as string))
