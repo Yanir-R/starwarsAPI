@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import Film from 'swapi-typescript/dist/models/Film';
 import { api } from '../api';
 import { FilmPreview } from '../FilmPreview/FilmPreview';
-
+import { Container, Row } from 'react-bootstrap'
 
 
 export const Films: React.FC = () => {
@@ -14,7 +14,10 @@ export const Films: React.FC = () => {
 
   if (error) return <> 'An error has occurred: ' +  error.message </>
   const films = data!.results
-  return (<>{films.map((film) => <FilmPreview key={film.episode_id} data={film} />)}</>)
+  return (
+    <Container>
+      <Row>
+        {films.map((film) => <FilmPreview key={film.episode_id} data={film} />)}
+      </Row>
+    </Container>)
 };
-
-
