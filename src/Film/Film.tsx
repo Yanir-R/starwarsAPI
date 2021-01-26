@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import FilmDTO from 'swapi-typescript/dist/models/Film';
 import { api } from '../api';
-import { Card, ListGroupItem, ListGroup, ProgressBar, Badge, Button, Container, Col, Row } from 'react-bootstrap'
+import { Card, ProgressBar, Button, Col, Row } from 'react-bootstrap'
 import Planet from 'swapi-typescript/dist/models/Planet';
 import Vehicle from 'swapi-typescript/dist/models/Vehicle';
 import Starship from 'swapi-typescript/dist/models/Starship';
@@ -28,25 +28,35 @@ export const Film: React.FC = () => {
 
   if (error) return <>'An error has occurred: ' + error </>
   return (
-    <Container>
+    <>
       <Card>
+        <Card.Header >
+          <Card.Title>{film!.title}</Card.Title>
+        </Card.Header>
         <Card.Body>
-          <Card.Title><Badge variant="warning">{film!.title}</Badge></Card.Title>
           <Card.Text>
-            <Badge variant="light">{film!.release_date}</Badge>
+            <small className="text-muted">Release Date: </small>
+            {film!.release_date}
           </Card.Text>
         </Card.Body>
-        <ListGroup className="list-group-flush">
-          <ListGroupItem><Badge variant="info">Planets:</Badge> {getNames(film!.data.planets)}</ListGroupItem>
-          <ListGroupItem><Badge variant="info">Vehicles:</Badge> {getNames(film!.data.vehicles)}</ListGroupItem>
-          <ListGroupItem><Badge variant="info">Starships:</Badge> {getNames(film!.data.starships)}</ListGroupItem>
-        </ListGroup>
+        <Card.Header> Planets:</Card.Header>
+        <Card.Body>
+          <Card.Text>{getNames(film!.data.planets)} </Card.Text>
+        </Card.Body>
+        <Card.Header> Vehicles:</Card.Header>
+        <Card.Body>
+          <Card.Text>{getNames(film!.data.vehicles)}</Card.Text>
+        </Card.Body>
+        <Card.Header> Starships:</Card.Header>
+        <Card.Body>
+          <Card.Text> {getNames(film!.data.starships)}</Card.Text>
+        </Card.Body>
       </Card>
-      <Row style={{marginTop:"20px"}}>
+      <Row style={{ marginTop: "20px" }}>
         <Col md={{ span: 4, offset: 4 }}>
           <Button block variant="primary" size="lg" href="/">Go Back</Button>
         </Col>
       </Row>
-    </Container>
+    </>
   )
 };

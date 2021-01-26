@@ -26,7 +26,7 @@ export const FilmPreview: React.FC<FilmPreviewProps> = ({ data }) => {
           {data.title}
         </Card.Header>
         <Card.Body>
-          <Card.Text>{excerpt3} </Card.Text>
+          <Card.Text>{excerpt3}</Card.Text>
         </Card.Body>
         <Card.Footer>
           <Button variant="light">
