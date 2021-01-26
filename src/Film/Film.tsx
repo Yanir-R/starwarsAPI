@@ -1,9 +1,9 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import FilmDTO from 'swapi-typescript/dist/models/Film';
 import { api } from '../api';
-import { Card, ProgressBar, Button, Col, Row } from 'react-bootstrap'
+import { Card, Spinner, Button, Col, Row } from 'react-bootstrap'
 import Planet from 'swapi-typescript/dist/models/Planet';
 import Vehicle from 'swapi-typescript/dist/models/Vehicle';
 import Starship from 'swapi-typescript/dist/models/Starship';
@@ -24,7 +24,7 @@ export const Film: React.FC = () => {
   const { filmId } = useParams<Record<string, string | undefined>>()
   const { isLoading, error, data: film } = useQuery<unknown, unknown, IFilm>(['film', filmId], api.film(filmId as string))
 
-  if (isLoading) return <ProgressBar animated now={45} />
+  if (isLoading) return <Spinner animation="border" variant="dark" />
 
   if (error) return <>'An error has occurred: ' + error </>
   return (
@@ -54,7 +54,11 @@ export const Film: React.FC = () => {
       </Card>
       <Row style={{ marginTop: "20px" }}>
         <Col md={{ span: 4, offset: 4 }}>
-          <Button block variant="primary" size="lg" href="/">Go Back</Button>
+          <Button block variant="light" size="lg">
+            <Link to="/">
+              Go Back
+           </Link>
+          </Button>
         </Col>
       </Row>
     </>

@@ -3,12 +3,13 @@ import Film from "swapi-typescript/dist/models/Film";
 import { Card, Col, Button } from "react-bootstrap";
 import limitCharacters from "limit-characters";
 import { useFavoriteFilm } from "../useFavoriteFilm";
+import { Link } from "react-router-dom";
 interface FilmPreviewProps {
   data: Film;
 }
 
 export const FilmPreview: React.FC<FilmPreviewProps> = ({ data }) => {
-  const excerpt3 = limitCharacters({
+  const description = limitCharacters({
     text: data.opening_crawl,
     length: 200,
     breakWord: false,
@@ -26,7 +27,7 @@ export const FilmPreview: React.FC<FilmPreviewProps> = ({ data }) => {
           {data.title}
         </Card.Header>
         <Card.Body>
-          <Card.Text>{excerpt3}</Card.Text>
+          <Card.Text>{description}</Card.Text>
         </Card.Body>
         <Card.Footer>
           <Button variant="light">
@@ -34,7 +35,9 @@ export const FilmPreview: React.FC<FilmPreviewProps> = ({ data }) => {
           </Button>
           <Button variant="light">
             <Card.Link onClick={toggleIsFavorite}>
-              {isFavorite ? "Delete From Favorite" : "Add To Favorite"}
+              <Link to="href">
+                {isFavorite ? "Delete From Favorites" : "Add To Favorites"}
+              </Link>
             </Card.Link>
           </Button>
         </Card.Footer>
