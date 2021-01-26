@@ -17,10 +17,9 @@
 - [Motivation](#Motivation)
 
 ## Introduction
-[swapi.dev](http://swapi.dev/) is data source for Star Wars universe accessible via RESTful API <br>
+[swapi.dev](http://swapi.dev/) is data source for Star-Wars universe accessible via RESTful API <br>
 This project is Web Client App that presents data from [swapi.dev](http://swapi.dev/) <br>
-Web Client App present data from [swapi.dev](http://swapi.dev/) <br>
-Allows user to select favorite films and save or delete them from your localstorage
+Allows users to select their favorite films, and save or delete them from their <code>localstorage</code>.
 
 ## Features
 - [x] Select Favorite Film
@@ -28,20 +27,18 @@ Allows user to select favorite films and save or delete them from your localstor
 - [x] Delete From Favorite List
 
 ## Instructions
-- Initially the application with all Star-Wars movies.
-- Initially the application with all Star Wars movies.
-- More info button to see more details about each movie.
-- Add Favorite button to add movie to your localstorage
-- Delete Favorite button to delete movie from your localstorage
+- Initially the application with all Star-Wars films.
+- More info to see more details about each film.
+- <code>Add favorite</code> to add a film to your localstorage
+- <code>Delete Favorite</code> to delete a film from your localstorage
 
 ## Motivation
-I created the project in order to specialize in the technologies I used and demonstrate my programming abilities
+I created the project to specialize in the technologies I used and demonstrate my programming abilities
 
 ## Technologies
 [<img src=https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg width="40" height="40"/>](https://reactjs.org/)
 [<img src=https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg width="40" height="40" />](https://www.typescriptlang.org/)
 [<img src=https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg width="40" height="40" />](https://react-bootstrap.github.io/)
-
 
 ## License
 MIT © [Yanir-r]()
