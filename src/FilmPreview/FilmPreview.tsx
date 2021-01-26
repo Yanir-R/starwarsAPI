@@ -30,19 +30,14 @@ export const FilmPreview: React.FC<FilmPreviewProps> = ({ data }) => {
           <Card.Text>{description}</Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="light">
-            <Card.Link href={`/film/${data.episode_id}`}>Read More</Card.Link>
-          </Button>
-          <Button variant="light">
-            <Card.Link onClick={toggleIsFavorite}>
-              <Link to="href">
-                {isFavorite ? "Delete From Favorites" : "Add To Favorites"}
-              </Link>
-            </Card.Link>
+          <Link to={`/film/${data.episode_id}`}>
+            <Button variant="light">Read More</Button>
+          </Link>
+          <Button variant="light" onClick={toggleIsFavorite}>
+            {isFavorite ? "Delete From Favorites" : "Add To Favorites"}
           </Button>
         </Card.Footer>
       </Card>
     </Col>
   );
 };
-
