@@ -21,7 +21,7 @@ Web Client App present data from [swapi.dev](http://swapi.dev/) <br>
 Allows user to select favorite films and save or delete them from your localstorage
 
 ## Features
-- [x] Selecte Favorite Film
+- [x] Select Favorite Film
 - [x] Add Film To Favorite List
 - [x] Delete From Favorite List
 
