@@ -19,6 +19,7 @@
 ## Introduction
 [swapi.dev](http://swapi.dev/) is data source for Star Wars universe accessible via RESTful API <br>
 This project is Web Client App that presents data from [swapi.dev](http://swapi.dev/) <br>
+Web Client App present data from [swapi.dev](http://swapi.dev/) <br>
 Allows user to select favorite films and save or delete them from your localstorage
 
 ## Features
@@ -28,6 +29,7 @@ Allows user to select favorite films and save or delete them from your localstor
 
 ## Instructions
 - Initially the application with all Star-Wars movies.
+- Initially the application with all Star Wars movies.
 - More info button to see more details about each movie.
 - Add Favorite button to add movie to your localstorage
 - Delete Favorite button to delete movie from your localstorage
