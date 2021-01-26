@@ -26,7 +26,7 @@ Allows user to select favorite films and save or delete them from your localstor
 - [x] Delete From Favorite List
 
 ## Instructions
-- Initially the application with all Starw Wars movies.
+- Initially the application with all Star Wars movies.
 - More info button to see more details about each movie.
 - Add Favorite button to add movie to your localstorage
 - Delete Favorite button to delete movie from your localstorage
