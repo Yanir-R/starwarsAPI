@@ -20,20 +20,24 @@ export const FilmPreview: React.FC<FilmPreviewProps> = ({ data }) => {
   );
 
   return (
-    <Col xs={12} md={4}>
-      <Card border="dark" style={{ width: "18rem" }} className="mb-4">
+    <Col xs={12} md={6} lg={4}>
+      <Card border="dark">
         <Card.Header className="font-weight-bold text-secondary text-uppercase">
           {data.title}
         </Card.Header>
         <Card.Body>
           <Card.Text>{excerpt3} </Card.Text>
-          <Card.Link href={`/film/${data.episode_id}`}><Button className="mb-4" variant="light">Read More</Button></Card.Link>
-          <Card.Footer>
-            <Card.Link onClick={toggleIsFavorite}>
-              <Button className="pb-5 mb-5 pb-md-0 mb-md-0 mx-auto mx-md-0" variant="light"> {isFavorite ? "Delete From Favorite" : "Add To Favorite"} </Button>
-            </Card.Link>
-          </Card.Footer>
         </Card.Body>
+        <Card.Footer>
+          <Button variant="light">
+            <Card.Link href={`/film/${data.episode_id}`}>Read More</Card.Link>
+          </Button>
+          <Button variant="light">
+            <Card.Link onClick={toggleIsFavorite}>
+              {isFavorite ? "Delete From Favorite" : "Add To Favorite"}
+            </Card.Link>
+          </Button>
+        </Card.Footer>
       </Card>
     </Col>
   );
