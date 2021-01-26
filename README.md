@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+<img src=https://www.programmableweb.com/sites/default/files/TheStarWarsAPI.png width="900" height="350" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get Started
+ #### Clone the repo:
+<code> git clone https://github.com/Yanir-R/starwarsAPI.git </code>
+#### Install dependencies :
+<code> npm i </code>
+#### Run The Client:
+<code> npm start </code>
 
-## Available Scripts
+## Table of Contents [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-In the project directory, you can run:
+- [Introduction](#Introduction)
+- [Features](#features)
+- [Instructions](#Instructions)
+- [Technologies](#Technologies)
+- [Motivation](#Motivation)
 
-### `yarn start`
+## Introduction
+Web Client App present data from [swapi.dev](http://swapi.dev/) <br>
+Allows user to select favorite films and save or delete them from your localstorage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
+- [x] Selecte Favorite Film
+- [x] Add Film To Favorite List
+- [x] Delete From Favorite List
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instructions
+- Initially the application with all Starw Wars movies.
+- More info button to see more details about each movie.
+- Add Favorite button to add movie to your localstorage
+- Delete Favorite button to delete movie from your localstorage
 
-### `yarn test`
+## Motivation
+I created the project in order to specialize in the technologies I used and demonstrate my programming abilities
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
+[<img src=https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg width="40" height="40"/>](https://reactjs.org/)
+[<img src=https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg width="40" height="40" />](https://www.typescriptlang.org/)
+[<img src=https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg width="40" height="40" />](https://react-bootstrap.github.io/)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+MIT © [Yanir-r]()
